@@ -11,7 +11,7 @@ The next step was to generate a path between the points.
 
 ### **Maps Generation**
 
-To generate maps we have written .ipynb. Scripts genereated randomly located obstacles and two points with fixed minimal distance between them.
+To generate maps we have written generate_maps.ipynb. Scripts genereated randomly located obstacles and two points with fixed minimal distance between them.
 
 <p align="center">
     <img src="images/example_map.png" width="180">
@@ -19,7 +19,7 @@ To generate maps we have written .ipynb. Scripts genereated randomly located obs
 
 ### **Path generation**
 
-To determine optimal path between two points, we have written C++ program using the Open Motion Planing library and the RRT* algorithm. After the map is generated we modified it with .ipynb script to make the path thicker and add gradient to it.
+To determine optimal path between two points, we have written C++ program using the Open Motion Planing library and the RRT* algorithm. After the map is generated we modified it with line_improvement.ipynb script to make the path thicker and add gradient to it.
 
 <p align="center">
     <img src="images/example_path.png" width="180">
